@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109718556-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109718556-2');
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300&subset=cyrillic,greek');
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Open Sans, sans-serif;
+}
+
+h1{
+  padding-left:20px;
+}
+
+p{
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.header {
+  font-weight: 700;
+  font-family: Open Sans Condensed, sans-serif;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 35px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+table {
+    left: 10%;
+    right: 10%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 70%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    color: #000;
+}
+
+th{
+  background-color: #f1f1f1;
+  color: black;
+}
+
+tr:hover{
+  background-color: #e8f3ff;
+}
+
+.responsive {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 1024px;
+    height: auto;
+    text-align: center;
+}
+
+.iconbox {
+    padding: 25px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 1024px;
+    height: auto;
+}
+.iconbox > div {
+    text-align: center;
+    width: 125px;
+    float: left;
+}
+.iconbox p {
+    margin: 25px;
+}
+
+.iconbox div img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.footer {
+   position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #ddd;
+   color: black;
+   text-align: center;
+   min-height: 30px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a {
+   color: black;
+}
+
+</style>
+<title>Методы оптимизации. МФТИ</title>
+</head>
+<body>
+
+<div class="header">
+  <a href="#home" class="logo">Методы оптимизации</a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="https://zoom.us/j/91936797903">Zoom</a>
+    <a href="https://t.me/joinchat/IiM08YyPgwAYPJtg" target="_blank">Telegram</a>
+    <!-- <a href="./projects/projects.html">Projects</a> -->
+  </div>
+</div>
+
+<div  style="width: 95%;  margin: 0 auto; max-width: 1024px">
+<p>Московский Физико - Технический Институт </p>
+<p>Лекции: <strong>в зуме по пятницам </strong></p>
+<p><img src='./files/gradient.gif' alt='nla' class="responsive" align="center" /></p>
+
+<h1>О курсе</h1>
+
+<p>Осенний семестр охватывает выпуклый анализ, математическое программирование, являясь, в основном, глубоким теоретическим введением в мир оптимизации. Весенний семестр ориентируется на алгоритмы и предполагает плотную практическую работу. Актуальные новости о курсе рассылаются в <a href='https://t.me/joinchat/IiM08YyPgwAYPJtg'>телеграм чате</a>.</p>
+
+<p><img src='./files/gasnikov.jpg' alt='AVGasnikov' class="responsive" align="center" style="width: 13%; min-width: 128px" />
+  <center>Лектор курса: профессор, д.ф.-м.н. Александр Владимирович Гасников </center>
+</p>
+
+<h1>Материалы курса</h1>
+<p>Все материалы курса будут выкладываться по мере готовности на этот сайт. Для ознакомления <a href='https://www.youtube.com/watch?v=ObqoK2J_db4&list=PLVdkoATzj9WQM9kWYzdED3aBVW3FrnU64'>доступны</a> лекции Гасникова А.В. в Кавказском Математическом Центре.</p>
+<p>Лекции читаются по пособию, актуальная версия которого находится <a href='https://arxiv.org/ftp/arxiv/papers/1711/1711.00394.pdf'>на архиве</a>.</p>
+
+<!-- TABLE -->
+<div style="overflow-x:auto;">
+<table align="center">
+<thead>
+<tr>
+<th></th>
+<th> 📄 </th>
+<th> 🎥 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Python Introduction </td>
+<td> <a href='./slides/01 Python Introduction.html'> .pdf </a> </td>
+<td> <a href='./html/01 Python Introduction.html'> video </a> </td>
+</tr>
+<tr>
+<td> Brief Python Intro </td>
+<td> <a href='./slides/02 Brief Python Intro.html'> .pdf </a> </td>
+<td> <a href='./html/02 Brief Python Intro.html'> video </a> </td>
+</tr>
+<tr>
+<td> SVD applications </td>
+<td> <a href='./slides/03 SVD applications.html'> .pdf </a> </td>
+<td> <a href='./html/03 SVD applications.html'> video </a> </td>
+</tr>
+<tr>
+<td> Matrix calculus </td>
+<td> <a href='./slides/04 Matrix calculus.html'> .pdf </a> </td>
+<td> <a href='./html/04 Matrix calculus.html'> video </a> </td>
+</tr>
+<tr>
+<td> 01 Floating-point arithmetic, vector norms </td>
+<td> <a href='./slides/05 01 Floating-point arithmetic, vector norms.html'> .pdf </a> </td>
+<td> <a href='./html/05 01 Floating-point arithmetic, vector norms.html'> video </a> </td>
+</tr>
+<tr>
+<td> 02 Matrix norms and unitary matrices </td>
+<td> <a href='./slides/06 02 Matrix norms and unitary matrices.html'> .pdf </a> </td>
+<td> <a href='./html/06 02 Matrix norms and unitary matrices.html'> video </a> </td>
+</tr>
+<tr>
+<td> 03 Matvecs and matmuls, memory hierarchy, Strassen algorithm </td>
+<td> <a href='./slides/07 03 Matvecs and matmuls, memory hierarchy, Strassen algorithm.html'> .pdf </a> </td>
+<td> <a href='./html/07 03 Matvecs and matmuls, memory hierarchy, Strassen algorithm.html'> video </a> </td>
+</tr>
+<tr>
+<td> 04 Matrix rank, low-rank approximation, SVD </td>
+<td> <a href='./slides/08 04 Matrix rank, low-rank approximation, SVD.html'> .pdf </a> </td>
+<td> <a href='./html/08 04 Matrix rank, low-rank approximation, SVD.html'> video </a> </td>
+</tr>
+<tr>
+<td> 05 Linear systems </td>
+<td> <a href='./slides/09 05 Linear systems.html'> .pdf </a> </td>
+<td> <a href='./html/09 05 Linear systems.html'> video </a> </td>
+</tr>
+<tr>
+<td> 06 Eigenvalues and eigenvectors </td>
+<td> <a href='./slides/10 06 Eigenvalues and eigenvectors.html'> .pdf </a> </td>
+<td> <a href='./html/10 06 Eigenvalues and eigenvectors.html'> video </a> </td>
+</tr>
+<tr>
+<td> 07 Matrix decompositions and how we compute them </td>
+<td> <a href='./slides/11 07 Matrix decompositions and how we compute them.html'> .pdf </a> </td>
+<td> <a href='./html/11 07 Matrix decompositions and how we compute them.html'> video </a> </td>
+</tr>
+<tr>
+<td> 08 Symmetric eigenvalue problem and SVD </td>
+<td> <a href='./slides/12 08 Symmetric eigenvalue problem and SVD.html'> .pdf </a> </td>
+<td> <a href='./html/12 08 Symmetric eigenvalue problem and SVD.html'> video </a> </td>
+</tr>
+<tr>
+<td> Overview of the first part of the course </td>
+<td> <a href='./slides/13 Overview of the first part of the course.html'> .pdf </a> </td>
+<td> <a href='./html/13 Overview of the first part of the course.html'> video </a> </td>
+</tr>
+<tr>
+<td> 09 From dense to sparse linear algebra </td>
+<td> <a href='./slides/14 09 From dense to sparse linear algebra.html'> .pdf </a> </td>
+<td> <a href='./html/14 09 From dense to sparse linear algebra.html'> video </a> </td>
+</tr>
+<tr>
+<td> 10 Sparse direct solvers </td>
+<td> <a href='./slides/15 10 Sparse direct solvers.html'> .pdf </a> </td>
+<td> <a href='./html/15 10 Sparse direct solvers.html'> video </a> </td>
+</tr>
+<tr>
+<td> 11 Intro to iterative methods </td>
+<td> <a href='./slides/16 11 Intro to iterative methods.html'> .pdf </a> </td>
+<td> <a href='./html/16 11 Intro to iterative methods.html'> video </a> </td>
+</tr>
+<tr>
+<td> 12 Great Iterative Methods </td>
+<td> <a href='./slides/17 12 Great Iterative Methods.html'> .pdf </a> </td>
+<td> <a href='./html/17 12 Great Iterative Methods.html'> video </a> </td>
+</tr>
+<tr>
+<td> 13 Iterative methods and preconditioners </td>
+<td> <a href='./slides/18 13 Iterative methods and preconditioners.html'> .pdf </a> </td>
+<td> <a href='./html/18 13 Iterative methods and preconditioners.html'> video </a> </td>
+</tr>
+<tr>
+<td> 14 Structured matrices, FFT, convolutions, Toeplitz matrices </td>
+<td> <a href='./slides/19 14 Structured matrices, FFT, convolutions, Toeplitz matrices.html'> .pdf </a> </td>
+<td> <a href='./html/19 14 Structured matrices, FFT, convolutions, Toeplitz matrices.html'> video </a> </td>
+</tr>
+<tr>
+<td> 15 Matrix functions and matrix equations </td>
+<td> <a href='./slides/20 15 Matrix functions and matrix equations.html'> .pdf </a> </td>
+<td> <a href='./html/20 15 Matrix functions and matrix equations.html'> video </a> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- ENDTAB -->
+
+<p>Экзаменационная программа представлена ниже:</p>
+<p> <ol>
+  <li>Понятие о численных методах оптимизации. Сильно выпуклые задачи, выпуклые (вырожденные) задачи, невыпуклые задачи. Гладкие, негладкие задачи.</li>
+  <li>Регуляризация и рестарты. Привести примеры!</li>
+  <li>Принцип множителей Лагранжа и теорема о неявной функции. О сложности вычисления градиента и автоматическом дифференцировании. Приложение к задаче оптимального управления.</li>
+  <li>Метод градиентного спуска. Выпуклые задачи. Невыпуклые задачи (сходимость к локальному экстремуму).</li>
+  <li>Невыпуклая оптимизация. Примеры трудных задач невыпуклой оптимизации. Пример метода (второго порядка), сходящегося к локальному минимуму.</li>
+  <li>Условие Поляка-Лоясиевича (ПЛ) и глобальная сходимость градиентного спуска для невыпуклых задач, целевая функция которых удовлетворяет условию (ПЛ). Как изменятся оценки скорости сходимости, если градиент доступен с аддитивным шумом в концепции относительной точности? Сведение решение системы нелинейных уравнений к задаче оптимизации с условием (ПЛ).</li>
+  <li>Двойственная задача. Слабая и сильная двойственность для задач выпуклой оптимизации. Теорема о минмаксе (Фон Неймана, Сион-Какутани) (без доказательства). Седловые задачи. Коническая двойственность. Теоремы об альтернативах (Фаркаш) и их следствия (основная теорема финансовой математики об отсутствии арбитража; робастная оптимизация).</li>
+  <li>Понятие о прямо-двойственных методах на примере решение задачи минимизации выпуклого сепарабельного функционала с аффинными ограничениями с помощью перехода к двойственной задаче и ее решения методом градиентного спуска.</li>
+  <li>Унимодальные функции одной переменной. Методы одномерной минимизации (метод дихотомии, метод золотого сечения). Задача о распределении ресурсов.</li>
+  <li>Методы маломерной оптимизации: метод центров тяжести, метод эллипсоидов.</li>
+  <li>Способы выбора шага в методах. Наискорейший спуск. Правило Армихо и правило Голдстейна (факультативно). Адаптивный способ выбора шага.</li>
+  <li>Сопряженные направления. Метод сопряженных градиентов для минимизации квадратичных функций. Метод сопряженных градиентов для решения задач выпуклой оптимизации.</li>
+  <li>Метод тяжелого шарика Поляка. Ускоренный градиентный метод (метод подобных треугольников). &nbsp;</li>
+  <li>Задачи оптимизации на множествах простой структуры. Дивергенция Брэгмана. Метод проекции (суб-)градиента, метод зеркального спуска.</li>
+  <li>Метод условного градиента (Франк-Вульфа). Пример задачи минимизации квадратичной формы с разреженной положительно определенной матрицей на единичном симплексе.</li>
+  <li>Концепция (неточной) модели функции. Композитная оптимизация.</li>
+  <li>Универсальный градиентный спуск и его ускоренный вариант.</li>
+  <li>Проксимальный градиентный спуск. Ускоренный проксимальный метод. Каталист - общий способ ускорения различных неускоренных методов.</li>
+  <li>Метод Ньютона. Окрестность квадратичной скорости сходимости. Понятие о квазиньютоновских методах (LBFGS).</li>
+  <li>Стохастическая оптимизация. Минибатчинг и распараллеливание.</li>
+  <li>Рандомизированные методы. Минимизация квадратичной формы на симплексе. Покомпонентные методы.</li>
+  <li>Задача минимизации суммы функций.</li>
+  <li>Общая схема метода штрафных функций. Метод модифицированной функции Лагранжа. Методы внутренней точки.</li>
+  <li>Понятие самосогласованного барьера. Методы параметризации целевых функций. Методы отслеживания центральной траектории.</li>
+  <li>Численные методы оптимизации на службе статистики и машинного обучения. Принцип максимального правдоподобия.</li>
+</ol>
+
+
+</div>
+
+<div class="footer">
+  <p><a href="http://dmivilensky.ru/opt/index.html" target="_blank">👨‍🏫 Research group page</a> • <a href="https://fmin.xyz" target="_blank">💎 fmin.xyz</a> </p>
+</div>
+</body>
+</html>
