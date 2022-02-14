@@ -41,7 +41,7 @@ jobs:
           path: _site
           
       - name: Run notion4ever
-        run: python -m notion4ever --ll DEBUG
+        run: python -m notion4ever -ll "DEBUG"
         env:
             # HERE YOU NEED TO PLACE URL OF THE ROOT PAGE. PROBABLY IT IS "https://<username>.github.io"
             SITE_URL: "https://miptopt.github.io"
