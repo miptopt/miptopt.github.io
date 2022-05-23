@@ -1,274 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  
+
+<head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Методы Оптимизации. МФТИ" />
-  <meta property="og:image" content=" https://opt.mipt.ru/nm_mishra3d.svg " />
-  <meta property="og:description" content="[📜 Материалы прошлых лет](https://opt.mipt.ru/Материалы_прошлых_лет)
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Chrome, Firefox OS and Opera Status Bar Color -->
+  <meta name="theme-color" content="#FFFFFF">
+  <meta property="og:title" content="Методы оптимизации">
+    <meta property="og:type" content="blog">
+  <title>Методы оптимизации</title>
+  <!-- Favicon -->
+    <link rel="shortcut icon" href="📖">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+  <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
+  <link rel="stylesheet" type="text/css" href="css/notablog.css">
+  <link rel="stylesheet" type="text/css" href="css/theme.css">
+  <style>
+    :root {
+      font-size: 18px;
+    }
 
-[🎥 Zoom](https://us02web.zoom.us/j/85724101220?pwd=ZEJROEFvd2VZUU9HWm5tZ1NmdkFlQ" />
-  <meta property='og:site_name' content="Методы Оптимизации. МФТИ" />
-  <meta property="og:url" content="https://opt.mipt.ru" />
-  <link rel="stylesheet" href="https://opt.mipt.ru/css/main.css">
-  <!-- Fontawesome icons -->
-  <script src="https://kit.fontawesome.com/74cb2acb7c.js" crossorigin="anonymous"></script>
-  <!-- Mathjax -->
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-      },
-      svg: {
-        fontCache: 'global'
-      }
-    };
-  </script>
-  <script type="text/javascript" id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-  </script>
-  
-  
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔️</text></svg>">
-  
-  
-  
-  <title>Методы Оптимизации. МФТИ</title>
-  
-  
+    .DateTagBar {
+      margin-top: 1.0rem;
+    }
+  </style>
 </head>
-  <body>
-    
-<nav class="path-header">
-  <ul class="header-nav">
-    
 
-    
-    <li class="header-title-block">🏔️ Методы Оптимизации. МФТИ</li>
-    
-  </ul>
-</nav>
-
-
-<header>
-  
-  <div class="cover">
-     <img id="page-cover" src="https://opt.mipt.ru/nm_mishra3d.svg">
-  </div>
-  
-  
-  
-  <div class="icon">
-    🏔️
-  </div>
-  
-  
-</header>
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <article class="page">
-          <header class="page-header">
-          
-            
-            <div class="page-title" >Методы Оптимизации. МФТИ</div>
-            
-            
-            <p class="page-meta">
-              <time class="dt-published" datetime="19 May, 2022" itemprop="datePublished">
-                
-                Last edited: 19 May, 2022
-                
-              </time>
-            </p>
-            
-            
-          
-          </header>
-          <div class="page-content">
-            
-            
-            <p><a href="https://opt.mipt.ru/Материалы_прошлых_лет">📜 Материалы прошлых лет</a></p>
-<p><a href="https://us02web.zoom.us/j/85724101220?pwd=ZEJROEFvd2VZUU9HWm5tZ1NmdkFlQT09">🎥 Zoom</a>,  <a href="https://t.me/joinchat/IiM08YyPgwAYPJtg">✉ Telegram</a></p>
-<p>Московский Физико - Технический Институт</p>
-<p>Лекции: <strong>в зуме по пятницам 9.00 - 10.30</strong></p>
-<p><a href="https://opt.mipt.ru/Билеты">🎫 Билеты</a></p>
-<h1>О курсе</h1>
-<p><a href="https://opt.mipt.ru/posobie.pdf">📎 posobie.pdf</a></p>
-<p>Осенний семестр охватывает выпуклый анализ, математическое программирование, являясь, в основном, глубоким теоретическим введением в мир оптимизации. Весенний семестр ориентируется на алгоритмы и предполагает плотную практическую работу. Актуальные новости о курсе рассылаются в <a href="https://t.me/joinchat/IiM08YyPgwAYPJtg">телеграм чате</a>.</p>
-<p>
-<figure><img src="https://opt.mipt.ru/Untitled.png" /><figcaption>профессор МФТИ, д.ф.-м.н. Александр Владимирович Гасников</figcaption>
-</figure>
-</p>
-<p>
-<figure><img src="https://opt.mipt.ru/roland.png" /><figcaption>профессор университета Гренобль-Альпы, PhD, Роланд Хильдебранд</figcaption>
-</figure>
-</p>
-<h1>Материалы</h1>
-<ol>
-<li>
-<p>Лекция 1</p>
-<ul>
-<li>Видео: <a href="https://www.youtube.com/watch?v=-xxSspQYezw">📽</a></li>
-<li>
-<p>Презентация:</p>
-<p><a href="https://opt.mipt.ru/Заметка_4_февр._2022_г..pdf">📎 Заметка_4_февр._2022_г..pdf</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Лекция 2</p>
-<ul>
-<li>Видео: <a href="https://www.youtube.com/watch?v=AyLgs8dbCOo">📽</a></li>
-<li>
-<p>Презентация: </p>
-<p><a href="https://opt.mipt.ru/Заметка_11_февр._2022_г..pdf">📎 Заметка_11_февр._2022_г..pdf</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Лекция 3</p>
-<ul>
-<li>Видео: <a href="https://www.youtube.com/watch?v=62bs9e10mR8">📽</a></li>
-<li>
-<p>Презентация: </p>
-<p><a href="https://opt.mipt.ru/Заметка_18_февр._2022_г..pdf">📎 Заметка_18_февр._2022_г..pdf</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Лекция 4</p>
-<ul>
-<li>Видео: <a href="https://www.youtube.com/watch?v=JASxO-UYmOo">📽</a></li>
-<li>
-<p>Презентация: </p>
-<p><a href="https://opt.mipt.ru/Заметка_25_февр._2022_г..pdf">📎 Заметка_25_февр._2022_г..pdf</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Лекция 5</p>
-<ul>
-<li>Видео: <a href="https://www.youtube.com/watch?v=JOLoR5Io4AQ">📽</a></li>
-<li>
-<p>Презентация: </p>
-<p><a href="https://opt.mipt.ru/Заметка_4_марта_2022_г..pdf">📎 Заметка_4_марта_2022_г..pdf</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Лекция 6</p>
-<ul>
-<li>Видео: <a href="https://www.youtube.com/watch?v=570iwy5gTjQ">📽</a></li>
-<li>
-<p>Презентация: </p>
-<p><a href="https://opt.mipt.ru/Заметка_11_марта_2022_г..pdf">📎 Заметка_11_марта_2022_г..pdf</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Лекция 7</p>
-<ul>
-<li>Видео: <a href="https://www.youtube.com/watch?v=imxUGaxEPkA">📽</a></li>
-<li>
-<p>Презентация: </p>
-<p><a href="https://opt.mipt.ru/Заметка_18_марта_2022_г..pdf">📎 Заметка_18_марта_2022_г..pdf</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Лекция 8</p>
-<ul>
-<li>Видео: <a href="https://www.youtube.com/watch?v=WDG-mtsBGdM">📽</a></li>
-<li>
-<p>Презентация:</p>
-<p><a href="https://opt.mipt.ru/Заметка_25_марта_2022_г..pdf">📎 Заметка_25_марта_2022_г..pdf</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Лекция 9</p>
-<ul>
-<li>Видео: <a href="https://www.youtube.com/watch?v=gSO44qGpSl8">📽</a></li>
-<li>
-<p>Презентация:</p>
-<p><a href="https://opt.mipt.ru/Заметка_1_апр._2022_г..pdf">📎 Заметка_1_апр._2022_г..pdf</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Лекция 10</p>
-<ul>
-<li>Видео: <a href="https://www.youtube.com/watch?v=1dlhWb_Miyo">📽</a></li>
-<li>
-<p>Презентация:</p>
-<p><a href="https://opt.mipt.ru/Заметка_8_апр._2022_г..pdf">📎 Заметка_8_апр._2022_г..pdf</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Лекция 11</p>
-<ul>
-<li>Видео: <a href="https://www.youtube.com/watch?v=Qh3lrKpXKKY">📽</a></li>
-<li>
-<p>Презентация:</p>
-<p><a href="https://opt.mipt.ru/Заметка_15_апр._2022_г..pdf">📎 Заметка_15_апр._2022_г..pdf</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Лекция 12</p>
-<ul>
-<li>Видео: <a href="https://www.youtube.com/watch?v=wJRof2C30lg">📽</a></li>
-<li>
-<p>Презентация:</p>
-<p><a href="https://opt.mipt.ru/slides220422.pdf">📎 slides220422.pdf</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Лекция 13</p>
-<ul>
-<li>Видео: <a href="https://www.youtube.com/watch?v=meMfNDPio7Q">📽</a></li>
-<li>
-<p>Презентация:</p>
-<p><a href="https://opt.mipt.ru/slides290422.pdf">📎 slides290422.pdf</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Лекция 14</p>
-<ul>
-<li>Видео: <a href="https://youtu.be/_cQAFTFYeMU">📽</a></li>
-<li>
-<p>Презентация:</p>
-<p><a href="https://opt.mipt.ru/slides060522.pdf">📎 slides060522.pdf</a></p>
-</li>
-</ul>
-<ul>
-<li>
-<p>Файлы для запуска</p>
-<p><a href="https://opt.mipt.ru/nemirovski_disc.m">📎 nemirovski_disc.m</a></p>
-<p><a href="https://opt.mipt.ru/sparse_recovery.m">📎 sparse_recovery.m</a></p>
-<p><a href="https://opt.mipt.ru/SaveMPS.m">📎 SaveMPS.m</a></p>
-<p><a href="https://opt.mipt.ru/ressource_allocation.m">📎 ressource_allocation.m</a></p>
-<p><a href="https://opt.mipt.ru/max_flow.m">📎 max_flow.m</a></p>
-<p><a href="https://opt.mipt.ru/BuildMPS.m">📎 BuildMPS.m</a></p>
-</li>
-</ul>
-</li>
-</ol>
-<p><a href="https://fmin.xyz/">💎 fmin.xyz</a></p>
-<p><br/></p>
-            
-            
-          </div>
-        </article>
+<body>
+  <nav class="Navbar">
+            <a href="index.html">
+      <div class="Navbar__Btn"><span>🎢</span> <span>Методы оптимизации</span></div>
+    </a>
+          </nav>
+  <header class="Header">
+          <div class="Header__Cover">
+        <img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F975de97f-44ca-4f55-9756-e9c60741be40%2Fnm_mishra3d.svg?table=block&id=c5e13b68-e51c-4f90-ad5c-0eea3ca5f5e6">
       </div>
-    </main>
-    
-    
-    
-  </body>
+          <div class="Header__Spacer ">
+    </div>
+        <div class="Header__Icon"><span>🎢</span></div>
+        <h1 class="Header__Title">Методы оптимизации</h1>
+          </header>
+      <article id="https://www.notion.so/c5e13b68e51c4f90ad5c0eea3ca5f5e6" class="PageRoot"><div id="https://www.notion.so/71f5cf769dce452383230ecb825783c5" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><div id="https://www.notion.so/17f6e24fd1294e4e82972116a35075a8" class="ColumnList"><div id="https://www.notion.so/6d6e1fd9c14e41d5b05fae1b7e6526cb" class="Column" style="width:calc((100% - var(--column-spacing) * 1) * 0.5)"><h2 id="https://www.notion.so/5505a9efdc5d495abe356fee314097bb" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/5505a9efdc5d495abe356fee314097bb"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://zoom.us/j/91936797903">🎥 Zoom </a></span></span></h2></div><div id="https://www.notion.so/6e57f57de06c4864b095641c1bb044b1" class="Column" style="width:calc((100% - var(--column-spacing) * 1) * 0.5)"><h2 id="https://www.notion.so/4eb1b50081204fabb43f8c13efb51702" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/4eb1b50081204fabb43f8c13efb51702"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://t.me/joinchat/IiM08YyPgwAYPJtg">✉ Telegram</a></span></span></h2></div></div><div id="https://www.notion.so/6edea602a70f484dbf25e8134353fea6" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Московский Физико - Технический Институт</span></span></p></div><div id="https://www.notion.so/41c14c5f7ab14774b48bf07957645c2b" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Лекции: </span><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">в зуме по пятницам 12.20 - 13.45</strong></span></span></p></div><h1 id="https://www.notion.so/8e44a3fd98d84b4dae51a7a63f92975f" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/8e44a3fd98d84b4dae51a7a63f92975f"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">О курсе</span></span></h1><div id="https://www.notion.so/33c6cfbf1fc0460889ac63cc0fad1e89" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Осенний семестр охватывает выпуклый анализ, математическое программирование, являясь, в основном, глубоким теоретическим введением в мир оптимизации. Весенний семестр ориентируется на алгоритмы и предполагает плотную практическую работу. Актуальные новости о курсе рассылаются в </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://t.me/joinchat/IiM08YyPgwAYPJtg">телеграм чате</a></span><span class="SemanticString">.</span></span></p></div><div id="https://www.notion.so/c1e321d5b26d4f2eb43b370437f1db3b" class="ColumnList"><div id="https://www.notion.so/441ed333c95a40748f633869a5717190" class="Column" style="width:calc((100% - var(--column-spacing) * 1) * 0.5)"><div id="https://www.notion.so/1262636646e4445e85178a2d35f87dab" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9506a8f8-c644-4fa7-ad5f-5dc184888c2c%2FUntitled.png?width=288&amp;table=block&amp;id=12626366-46e4-445e-8517-8a2d35f87dab"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9506a8f8-c644-4fa7-ad5f-5dc184888c2c%2FUntitled.png?width=288&amp;table=block&amp;id=12626366-46e4-445e-8517-8a2d35f87dab" style="width:288px"/></a><figcaption><span class="SemanticStringArray"><span class="SemanticString">профессор МФТИ, д.ф.-м.н. Александр Владимирович Гасников</span></span></figcaption></figure></div></div><div id="https://www.notion.so/57a470fe1def4626b4bff6bfc4991e65" class="Column" style="width:calc((100% - var(--column-spacing) * 1) * 0.5)"><div id="https://www.notion.so/f365100c17654d868386a8582c4ec3f6" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc8a3d0e5-99de-4515-a9e0-a9083f85185a%2FUntitled.png?width=240&amp;table=block&amp;id=f365100c-1765-4d86-8386-a8582c4ec3f6"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc8a3d0e5-99de-4515-a9e0-a9083f85185a%2FUntitled.png?width=240&amp;table=block&amp;id=f365100c-1765-4d86-8386-a8582c4ec3f6" style="width:240px"/></a><figcaption><span class="SemanticStringArray"><span class="SemanticString">профессор университета Гренобль-Альпы, PhD, Роланд Хильдебранд</span></span></figcaption></figure></div></div></div><h1 id="https://www.notion.so/4b99fdf1de5442938ce17481420576b6" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/4b99fdf1de5442938ce17481420576b6"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Материалы курса</span></span></h1><div id="https://www.notion.so/4a88486b666e47258956979282077df2" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Все материалы курса будут выкладываться по мере готовности на этот сайт. Для ознакомления </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.youtube.com/watch?v=ObqoK2J_db4&amp;list=PLVdkoATzj9WQM9kWYzdED3aBVW3FrnU64">доступны</a></span><span class="SemanticString"> лекции Гасникова А.В. в Кавказском Математическом Центре.</span></span></p></div><div id="https://www.notion.so/cf6ddedd1e3e4a7dbc4d740e8e51a584" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Лекции прошлого года доступны по </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.youtube.com/watch?v=hELIaVLYQSQ&amp;list=PL4_hYwCyhAvZT27DsXTISyRfQn6zo7Wud">ссылке</a></span><span class="SemanticString">. А позапрошлого года по этой </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.youtube.com/watch?v=JkR-I6yq7ZA&amp;list=PLQSHEO58cjmMuDtDH0cu3ASh7QlVUiawG">ссылке</a></span><span class="SemanticString">.</span></span></p></div><div id="https://www.notion.so/b75722166aaa4c1f9bcb23f5b849bbcf" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">[1] Воронцова Е.А., Хильдебранд Р., Гасников А.В., Стонякин Ф.С. </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/pdf/2106.01946.pdf">Современные численные методы оптимизации. Выпуклый анализ. </a></span><span class="SemanticString">М.: МФТИ, 2021</span></span></p></div><div id="https://www.notion.so/7c11fa410b9b4de5b8e3876a6cb0c82a" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">[2] Гасников А.В. Универсальный градиентный спуск. М.: МЦНМО, 2020</span></span></p></div><a id="https://www.notion.so/db3e15d22a1c4907b317a110e80e05dc" class="File" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Faa69874d-5812-4014-adfb-653f40520b0b%2Fgasnikov_book.pdf?table=block&amp;id=db3e15d2-2a1c-4907-b317-a110e80e05dc"><div><div class="File__Icon"><svg viewBox="0 0 30 30" style="width:1.35em;height:1.35em;fill:inherit"><g><path d="M22,8v12c0,3.866-3.134,7-7,7s-7-3.134-7-7V8c0-2.762,2.238-5,5-5s5,2.238,5,5v12c0,1.657-1.343,3-3,3s-3-1.343-3-3V8h-2v12c0,2.762,2.238,5,5,5s5-2.238,5-5V8c0-3.866-3.134-7-7-7S6,4.134,6,8v12c0,4.971,4.029,9,9,9s9-4.029,9-9V8H22z"></path></g></svg></div><div><span class="File__Title">gasnikov_book.pdf</span><span class="File__Size">1598.5KB</span></div></div></a><div id="https://www.notion.so/a31d003f762b4a829f11b587e85e676c" class="CollectionInline"><h3><a class="Anchor" href="#https://www.notion.so/a31d003f762b4a829f11b587e85e676c"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Прошедшие лекции</span></span></h3><div class="Table"><table><thead><tr><th style="width:276px">Тема</th><th style="width:191px">Ссылки</th><th style="width:100px">Конспект</th><th style="width:100px">Видео</th></tr></thead><tbody><tr><td class="Table__CellTitle"><a href="https://www.notion.so/6772f0f6279440eea903a918b2080d6f"><span class="SemanticStringArray"><span class="SemanticString">Введение в численные методы выпуклой оптимизации. Градиентный спуск, ускоренный градиентный спуск, метод Чебышёва, метод сопряженных градиентов.</span></span></a></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString">[1], п. 2.4</span></span></td><td class="Table__CellText"><span class="SemanticStringArray"></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href=""></a></span></span></td></tr><tr><td class="Table__CellTitle"><a href="https://www.notion.so/a153ad09bc7d4e40b10b906cd79425b9"><span class="SemanticStringArray"><span class="SemanticString">Градиентный спуск для задач невыпуклой оптимизации. Условие Поляка-Лоясиевича. Нижние оценки для градиентных методов на классе гладких выпуклых задач.</span></span></a></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString">см. [2], параграф 1, упражнение 1.3</span></span></td><td class="Table__CellText"><span class="SemanticStringArray"></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://youtu.be/NHbA991b3hQ">📽</a></span></span></td></tr><tr><td class="Table__CellTitle"><a href="https://www.notion.so/4a632ec66a1c4714b755f244d39194f7"><span class="SemanticStringArray"><span class="SemanticString">Методы решения малоразмерных задач выпуклой оптимизации. Метод центров тяжести, эллипсоидов.</span></span></a></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString">см. [2] упражнение 1.4 и [1], п. 2.2</span></span></td><td class="Table__CellText"><span class="SemanticStringArray"></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://youtu.be/wGEbYH89RJU">📽</a></span></span></td></tr><tr><td class="Table__CellTitle"><a href="https://www.notion.so/44d6916c5d8349b59be658e9f6f91b83"><span class="SemanticStringArray"><span class="SemanticString">Негладкая оптимизация. Субградиентный метод. Неточный оракул.</span></span></a></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString">см. [2] первая половина параграфа 2, упражнения 2.1, 2.2, 2.6</span></span></td><td class="Table__CellText"><span class="SemanticStringArray"></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://youtu.be/qFuUwAReMV0">📽</a></span></span></td></tr><tr><td class="Table__CellTitle"><a href="https://www.notion.so/7e3a0b58fd1b498c9739ada516df4d33"><span class="SemanticStringArray"><span class="SemanticString">Методы проекции градиента. Композитная оптимизация. Введение стохастическую оптимизацию. Минимизация квадратичной формы на симплексе рандомизированным методом.</span></span></a></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString">см. [2] вторая половина параграфа 2, параграф 3 в части композитной оптимизации и замечание 5.2</span></span></td><td class="Table__CellText"><span class="SemanticStringArray"></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://youtu.be/EhrNvINoqsA">📽</a></span></span></td></tr><tr><td class="Table__CellTitle"><a href="https://www.notion.so/cbef043f6e41415780c6755fb9edcb2f"><span class="SemanticStringArray"><span class="SemanticString">Стохастический градиентый спуск. Сходимость в условиях интерполируемости.</span></span></a></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString">см. начало </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/pdf/1907.04232.pdf">статьи </a></span><span class="SemanticString">и формулировки результатов из </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="http://proceedings.mlr.press/v89/vaswani19a/vaswani19a.pdf">статьи</a></span></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F78918174-8aa4-494e-b049-a22e01bc5005%2F__12__2021.pdf?table=block&amp;id=cbef043f-6e41-4157-80c6-755fb9edcb2f">лекция МФТИ 12 марта 2021.pdf</a></span></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://youtu.be/Sx3rPLEaxXM">📽</a></span></span></td></tr><tr><td class="Table__CellTitle"><a href="https://www.notion.so/0099d4f234444570b6187f25a3dca5b5"><span class="SemanticStringArray"><span class="SemanticString">Оптимальные методы решения гладких и негладких выпуклых и сильно выпуклых задач оптимизации. Метод рестартов и регуляризации. Приводятся таблички, резюмирующие основные результаты, полученные в предыдущих лекциях.</span></span></a></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString">см. [1], п. 2.1 и [1], замечание 4.1, конец параграфа 5 и начало Приложения</span></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F09570fe5-57fc-4b4f-871c-b5fe1d804813%2F_19__2021_..pdf?table=block&amp;id=0099d4f2-3444-4570-b618-7f25a3dca5b5">Заметка 19 марта 2021 г..pdf</a></span></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://youtu.be/NmvYgAIp-Ec">📽</a></span></span></td></tr><tr><td class="Table__CellTitle"><a href="https://www.notion.so/7a8d4f22cc6543fbb026dd5b4b272701"><span class="SemanticStringArray"><span class="SemanticString">Метод условного градиента, универсальный градиентный метод.</span></span></a></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString">см. [1], п. 2.6 и [2], параграфы 2, 5</span></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F128d999f-0924-4e9a-bee7-60dade2b2a92%2F_26__2021_..pdf?table=block&amp;id=7a8d4f22-cc65-43fb-b026-dd5b4b272701">Заметка 26 марта 2021 г..pdf</a></span></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://youtu.be/Yv2ZvoAA2IY">📽</a></span></span></td></tr><tr><td class="Table__CellTitle"><a href="https://www.notion.so/2ad145c1bade4efd984df4918fc3e3de"><span class="SemanticStringArray"><span class="SemanticString">Решения задач оптимизации с ограничениями. Принцип множителей Лагранжа, двойственная задача, теорема Сиона-Какутани, формула Демьянова-Данскина, регуляризация двойственной задачи. Метод штрафных функций.</span></span></a></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString">см. [2] все до примера 4.1(не включительно)). Также упражнения 4.1, 4.2, 4.4 и замечание 4.3</span></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4274d1ff-2f0d-4a49-b124-46e82367661d%2F_2_._2021_._(2).pdf?table=block&amp;id=2ad145c1-bade-4efd-984d-f4918fc3e3de">Заметка 2 апр. 2021 г. (2).pdf</a></span></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://youtu.be/LR4clkfbepc">📽</a></span></span></td></tr><tr><td class="Table__CellTitle"><a href="https://www.notion.so/80f08c3e027c48c4abd8140410189c58"><span class="SemanticStringArray"><span class="SemanticString">Рандомизированные методы. Метод рандомизации суммы, метод редукции дисперсии, покомпонентные методы. Метод Ньютона и окрестность квадратичной сходимости</span></span></a></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString">[2] замечание 1).
+</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/pdf/2010.00892.pdf">работа</a></span><span class="SemanticString"> в части методов редукции дисперсии и п. 6.4 </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/pdf/1405.4980.pdf">работы</a></span><span class="SemanticString"> в части покомпонентных методов.</span></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F69d607cd-0ee1-435f-a9db-330df61b0b0c%2F_9_._2021_..pdf?table=block&amp;id=80f08c3e-027c-48c4-abd8-140410189c58">Заметка 9 апр. 2021 г..pdf</a></span></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://youtu.be/n8qOvTp8uvs">📽</a></span></span></td></tr><tr><td class="Table__CellTitle"><a href="https://www.notion.so/7425eb4d04164af787b1327ad03b2685"><span class="SemanticStringArray"><span class="SemanticString">Полуопределенное программирование. Методы внутренней точки.</span></span></a></td><td class="Table__CellText"><span class="SemanticStringArray"></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F51e03ac6-3e21-42ed-8ed5-70a6733e5255%2Fslides160421.pdf?table=block&amp;id=7425eb4d-0416-4af7-87b1-327ad03b2685">slides160421.pdf</a></span></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://youtu.be/NLpvOBI6xXk">📽</a></span></span></td></tr><tr><td class="Table__CellTitle"><a href="https://www.notion.so/16c4c3f1c82a4c0e876f2ef463a9d682"><span class="SemanticStringArray"><span class="SemanticString">Полуопределенное программирование. Приложения.</span></span></a></td><td class="Table__CellText"><span class="SemanticStringArray"></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F70fa9745-9ac6-419a-bc61-046849c7d5df%2Fslides230421.pdf?table=block&amp;id=16c4c3f1-c82a-4c0e-876f-2ef463a9d682">slides230421.pdf</a></span><span class="SemanticString">,</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F952ef7af-a3a8-43be-9f33-73a9d21ed775%2FNTdirections.m?table=block&amp;id=16c4c3f1-c82a-4c0e-876f-2ef463a9d682">NTdirections.m</a></span><span class="SemanticString">,</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7f170ddd-4c92-48dc-bde7-f1ae5934ac6d%2Frandom_LP_NT_scaling.m?table=block&amp;id=16c4c3f1-c82a-4c0e-876f-2ef463a9d682">random_LP_NT_scaling.m</a></span><span class="SemanticString">,</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F0a5c5312-9bc6-431b-b4cf-d75db0f9f477%2Ftruss.m?table=block&amp;id=16c4c3f1-c82a-4c0e-876f-2ef463a9d682">truss.m</a></span></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://youtu.be/jqvuUh-G0Jw">📽</a></span></span></td></tr><tr><td class="Table__CellTitle"><a href="https://www.notion.so/9323ff8fc5fd49c0b8c388d6c7242cea"><span class="SemanticStringArray"><span class="SemanticString">Полуопределенное программирование.</span></span></a></td><td class="Table__CellText"><span class="SemanticStringArray"></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff1fb0bdb-90d5-4ccf-a659-99a638168419%2Fslides300421.pdf?table=block&amp;id=9323ff8f-c5fd-49c0-b8c3-88d6c7242cea">slides300421.pdf</a></span><span class="SemanticString">,</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7a03beff-96fa-4690-bb3d-3c7b829dffd2%2Fminimize_univariate.m?table=block&amp;id=9323ff8f-c5fd-49c0-b8c3-88d6c7242cea">minimize_univariate.m</a></span><span class="SemanticString">,</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7f095fbd-e47b-4d19-adbb-2b7fe6db326f%2Fmin_poly_square_even.m?table=block&amp;id=9323ff8f-c5fd-49c0-b8c3-88d6c7242cea">min_poly_square_even.m</a></span><span class="SemanticString">,</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fff34bbcb-11fd-42eb-a60f-8739674756c2%2Fmin_poly_square_general.m?table=block&amp;id=9323ff8f-c5fd-49c0-b8c3-88d6c7242cea">min_poly_square_general.m</a></span><span class="SemanticString">,</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F652375e4-de78-4165-a718-2cea10a6cd93%2Fminimize_ternary_quartic.m?table=block&amp;id=9323ff8f-c5fd-49c0-b8c3-88d6c7242cea">minimize_ternary_quartic.m</a></span><span class="SemanticString">,</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb948e331-d0b2-4f18-82b6-d6beca46f12d%2Fmaxcube_random.m?table=block&amp;id=9323ff8f-c5fd-49c0-b8c3-88d6c7242cea">maxcube_random.m</a></span><span class="SemanticString">,</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F627585b4-235c-401c-b81c-49ef7c3fcb9f%2Fmaxcut_random.m?table=block&amp;id=9323ff8f-c5fd-49c0-b8c3-88d6c7242cea">maxcut_random.m</a></span><span class="SemanticString">,</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff8a520f3-b743-470b-837f-76615e4f2254%2Fstability_relaxations.m?table=block&amp;id=9323ff8f-c5fd-49c0-b8c3-88d6c7242cea">stability_relaxations.m</a></span></span></td><td class="Table__CellText"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://youtu.be/-73wGV9oUbk">📽</a></span></span></td></tr></tbody></table></div></div><div id="https://www.notion.so/6ccf03cc4b424c3ca7c489874af3f118" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Экзаменационная программа представлена ниже (в скобках указано, где можно прочитать о том, что входит в билет; однако настоятельно рекомендуем использовать материалы лекций, в которых по многим билетам содержится более точная информация):</span></span></p></div><ol class="NumberedListWrapper"><li id="https://www.notion.so/0971531375504a088419d7fe5fbcdf1c" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">Понятие о численных методах оптимизации. Сильно выпуклые задачи, выпуклые (вырожденные) задачи, невыпуклые задачи. Гладкие, негладкие задачи. ([1] п. 2.1 - таблица 2.1 и ее обоснование, п. 2.4)</span></span></li><li id="https://www.notion.so/6fce41c10041480cbcd37adf128b04b1" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">Регуляризация и рестарты. Привести примеры! ([1] пп. 2.1, 2.10.8)</span></span></li><li id="https://www.notion.so/ddbb7bf9d51d4fed9125b8f11dfb6742" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">Метод градиентного спуска. Выпуклые задачи. Невыпуклые задачи (сходимость к локальному экстремуму). ([2] параграф 1)</span></span></li><li id="https://www.notion.so/655aee3162314e2b9905466db6296cf9" class="NumberedList" value="4"><span class="SemanticStringArray"><span class="SemanticString">Невыпуклая оптимизация. Примеры трудных задач невыпуклой оптимизации. ([2] параграф 1)</span></span></li><li id="https://www.notion.so/e6743aa67c894e47a09b0dd7d8e3124d" class="NumberedList" value="5"><span class="SemanticStringArray"><span class="SemanticString">Условие Поляка-Лоясиевича (ПЛ) и глобальная сходимость градиентного спуска для невыпуклых задач, целевая функция которых удовлетворяет условию (ПЛ). Как изменятся оценки скорости сходимости, если градиент доступен с аддитивным шумом в концепции относительной точности? Сведение решение системы нелинейных уравнений к задаче оптимизации с условием (ПЛ). ([2] параграф 1; [1] п. 2.11.1)</span></span></li><li id="https://www.notion.so/a8020585ae6e488a85ca8c8a94d53584" class="NumberedList" value="6"><span class="SemanticStringArray"><span class="SemanticString">Двойственная задача. Слабая и сильная двойственность для задач выпуклой оптимизации. Теорема о минмаксе (Фон Неймана, Сион-Какутани) (без доказательства). Понятие о прямо-двойственных методах на примере решение задачи минимизации выпуклого сепарабельного функционала с аффинными ограничениями с помощью перехода к двойственной задаче и ее решения методом градиентного спуска. ([2] параграф 4 (на лекции было изложение в варианте с регуляризацией - см. упражнение 4.4); [1] п. 1.9)</span></span></li><li id="https://www.notion.so/b73de46db2b44e31af51a780e14a3e8f" class="NumberedList" value="7"><span class="SemanticStringArray"><span class="SemanticString">Унимодальные функции одной переменной. Методы одномерной минимизации (метод дихотомии, метод золотого сечения). Задача о распределении ресурсов. ([1] п. 2.2.1; [1] упражнение 4.7)</span></span></li><li id="https://www.notion.so/9b5edff9d5d54120a67a68b106a52170" class="NumberedList" value="8"><span class="SemanticStringArray"><span class="SemanticString">Методы маломерной оптимизации: метод центров тяжести, метод эллипсоидов. ([1] пп. 2.2.2, 2.2.3; [2] упражнение 1.4)</span></span></li><li id="https://www.notion.so/9af7f26ab2ae4e158c884c756d5986b2" class="NumberedList" value="9"><span class="SemanticStringArray"><span class="SemanticString">Способы выбора шага в методах. Наискорейший спуск. Адаптивный способ выбора шага. ([2] замечание 1.4, стр. 58-60, упражнение 2.6)</span></span></li><li id="https://www.notion.so/c7ff9efd96db49a1ad6f1a7b710fc20c" class="NumberedList" value="10"><span class="SemanticStringArray"><span class="SemanticString">Сопряженные направления. Метод сопряженных градиентов для минимизации квадратичных функций. Метод сопряженных градиентов для решения задач выпуклой оптимизации. ([1], п. 2.4; [2] замечание 1.6)</span></span></li><li id="https://www.notion.so/2230570bc0524343bb74739c01583d2e" class="NumberedList" value="11"><span class="SemanticStringArray"><span class="SemanticString">Метод тяжелого шарика Поляка. Метод Чебышева. Ускоренный градиентный метод (метод подобных треугольников). ([1], п. 2.4)</span></span></li><li id="https://www.notion.so/904e557ce18a485abed6aab24ea12713" class="NumberedList" value="12"><span class="SemanticStringArray"><span class="SemanticString">Задачи оптимизации на множествах простой структуры. Дивергенция Брэгмана. Метод проекции (суб-)градиента, метод зеркального спуска. ([2], параграф 2; [1] п. 2.10)</span></span></li><li id="https://www.notion.so/e8590a500efc4d4480b7f273cf40ee91" class="NumberedList" value="13"><span class="SemanticStringArray"><span class="SemanticString">Метод условного градиента (Франк-Вульфа). Пример задачи минимизации квадратичной формы с разреженной положительно определенной матрицей на единичном симплексе. ([2] упражнение 1.6; [1] пп. 2.6, 3.5)</span></span></li><li id="https://www.notion.so/e6982ac6509e4e4a88a94bdf601a63a1" class="NumberedList" value="14"><span class="SemanticStringArray"><span class="SemanticString">Композитная оптимизация. Пример Tomogravity model. ([2] п. 2.10.8; [1] параграфы 3 и 5)</span></span></li><li id="https://www.notion.so/364fddffa0634095b4765ca922bc2ce6" class="NumberedList" value="15"><span class="SemanticStringArray"><span class="SemanticString">Универсальный градиентный спуск. ([2] параграф 5)</span></span></li><li id="https://www.notion.so/2b8215b455c5468d877178ca15e29b08" class="NumberedList" value="16"><span class="SemanticStringArray"><span class="SemanticString">(билет только для досрочного экзамена, появляется при согласии студента) Проксимальный градиентный спуск. Ускоренный проксимальный метод. Каталист - общий способ ускорения различных неускоренных методов. ([2] параграф 3 и Приложение; [1] п. 2.7)</span></span></li><li id="https://www.notion.so/60446632f1284671ba7914d956fc75b8" class="NumberedList" value="17"><span class="SemanticStringArray"><span class="SemanticString">(билет только для досрочного экзамена, появляется при согласии студента) Базовые представления о распределенной оптимизации (децентрализованной). ([2] Пример 4.1, упражнение 4.8 и текст после него)</span></span></li><li id="https://www.notion.so/0fa83cbe6f864d099d05003af4c30a80" class="NumberedList" value="18"><span class="SemanticStringArray"><span class="SemanticString">Метод Ньютона. Окрестность квадратичной скорости сходимости. Понятие о квазиньютоновских методах (LBFGS). ([2] Приложение)</span></span></li><li id="https://www.notion.so/1166faf8621748318abd940750b9e5af" class="NumberedList" value="19"><span class="SemanticStringArray"><span class="SemanticString">Стохастическая оптимизация. Минибатчинг и распараллеливание. ([2] Приложение; </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://arxiv.org/pdf/1907.04232.pdf">https://arxiv.org/pdf/1907.04232.pdf</a></span><span class="SemanticString">)</span></span></li><li id="https://www.notion.so/7e57bd8b131a44189851ec3a241bf0ab" class="NumberedList" value="20"><span class="SemanticStringArray"><span class="SemanticString">Рандомизированные методы. Минимизация квадратичной формы на симплексе. Покомпонентные методы. ([2] замечание 5.2 и Приложение)</span></span></li><li id="https://www.notion.so/b1b80062b41648418893bbafe6d543e8" class="NumberedList" value="21"><span class="SemanticStringArray"><span class="SemanticString">Задача минимизации суммы функций. Метод рандомизации суммы. Метод редукции дисперсии. ([2] замечание 1 Приложения и цитированная там литература, в частности, 
+</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9226504&amp;casa_token=QHMeWrHS3kYAAAAA:OTx62ZOci_Ub7MJuF-OO-qetoOYaOlrkiv82ow6TjKk57n4MqE29h0D7oOtrf7Y_A7h0PvSChw&amp;tag=1">https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9226504&amp;casa_token=QHMeWrHS3kYAAAAA:OTx62ZOci_Ub7MJuF-OO-qetoOYaOlrkiv82ow6TjKk57n4MqE29h0D7oOtrf7Y_A7h0PvSChw&amp;tag=1</a></span><span class="SemanticString">)</span></span><a id="https://www.notion.so/b37160ecc92e420398868c2bd9bf6dcf" class="File" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd7d206c6-7809-4240-bf80-49291af2cde5%2F09226504.pdf?table=block&amp;id=b37160ec-c92e-4203-9886-8c2bd9bf6dcf"><div><div class="File__Icon"><svg viewBox="0 0 30 30" style="width:1.35em;height:1.35em;fill:inherit"><g><path d="M22,8v12c0,3.866-3.134,7-7,7s-7-3.134-7-7V8c0-2.762,2.238-5,5-5s5,2.238,5,5v12c0,1.657-1.343,3-3,3s-3-1.343-3-3V8h-2v12c0,2.762,2.238,5,5,5s5-2.238,5-5V8c0-3.866-3.134-7-7-7S6,4.134,6,8v12c0,4.971,4.029,9,9,9s9-4.029,9-9V8H22z"></path></g></svg></div><div><span class="File__Title">09226504.pdf</span><span class="File__Size">1133.2KB</span></div></div></a></li><li id="https://www.notion.so/a5496889ff36467c91dd48dcc054c5cb" class="NumberedList" value="22"><span class="SemanticStringArray"><span class="SemanticString">Конические программы (задачи). Симметрические конуса. Самосогласованные барьеры. Коническая двойственность. Центральный путь. Прямой метод отслеживания центрального пути. Точки шкалировки. Прямо-двойственные методы. ([1], пп. 1.14.1, 1.14.8, 2.9.1--3, 2.9.7)</span></span></li><li id="https://www.notion.so/cf0c118f584b45d6975c8fc4f8f036f4" class="NumberedList" value="23"><span class="SemanticStringArray"><span class="SemanticString">Конично-квадратичные и полу-определённые ограничения. Максимальный и минимальный эллипсоиды для политопа. Оптимизация топологии фермы. Поиск функции Ляпунова. Робастное линейное программирование. ([1], пп. 1.14.3, 1.15.1--2, 3.3.1)</span></span></li><li id="https://www.notion.so/b914271352c643fc99d8a769f035c860" class="NumberedList" value="24"><span class="SemanticStringArray"><span class="SemanticString">Задача нахождения максимального разреза. $\pi/2$-теорема Нестерова. Задача о максимальной клике. Полиномиальная задача оптимизации. Конуса неотрицательных полиномов и сумм квадратов. Релаксации типа сумм квадратов. Точность аппроксимации суммами квадратов. ([1], пп. 1.14.7, 3.2.2--3)</span></span></li></ol><div id="https://www.notion.so/e605ad58077b4a0183525c955c3b80be" class="ColumnList"><div id="https://www.notion.so/2e016a7e7c184a5f9fbef099b6ba2fb1" class="Column" style="width:calc((100% - var(--column-spacing) * 1) * 0.5)"><h2 id="https://www.notion.so/4d65943b3918452183c59e2c583aa99c" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/4d65943b3918452183c59e2c583aa99c"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="http://dmivilensky.ru/opt/index.html">👨‍🔬 Research group page</a></span></span></h2></div><div id="https://www.notion.so/36e0443f1a504edaac7ddb499f26185d" class="Column" style="width:calc((100% - var(--column-spacing) * 1) * 0.5)"><h2 id="https://www.notion.so/a2e0dc8ca48742fab7c5ebaf1fa554fe" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/a2e0dc8ca48742fab7c5ebaf1fa554fe"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://fmin.xyz/">💎 fmin.xyz</a></span></span></h2></div></div></article></body>
+
 </html>
